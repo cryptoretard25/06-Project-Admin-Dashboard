@@ -1,13 +1,188 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project 06: Admin Dashboard</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project 06: Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+  <div class="grid-container">
+    <div class="header">
+      <div class="search-container">
+        <img src="./content/header/magnify.png" alt="search">
+        <input type="search" id="search-field">
+      </div>
+      <div class="profile-container">
+        <img src="./content/header/bell-ring-outline.png" alt="">
+        <div><img img src="./content/header/Grumpy-Cat-Face-PNG-Clipart.png" alt=""></div>
+        <h3><span class="name">Morgan Oakley</span></h3>
+      </div>
+      <div class="greet-container">
+        <div class="greet-img"><img src="./content/header/Grumpy-Cat-Face-PNG-Clipart.png" alt=""></div>
+        <div class="greet-text">
+          <h3>Hi there,</h3>
+        </div>
+        <div class="greet-name">
+          <h2><span class="name">Morgan Oakley</span>(@<span class="username">morgan</span>)</h2>
+        </div>
+      </div>
+      <div class="buttons-container">
+        <button>New</button>
+        <button>Upload</button>
+        <button>Share</button>
+      </div>
+    </div>
+    <div class="sidebar">
+      <div class="logo">
+        <img src="./content/logo.png" alt="">
+        <h1>Dashboard</h1>
+      </div>
+      <div class="menu">
+        <div class="menu-item">
+          <img src="./content/sidebar/home.png" alt="">
+          <h2><a href="/">Home</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/card-account-details-outline.png" alt="">
+          <h2><a href="/">Profile</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/message-outline.png" alt="">
+          <h2><a href="/">Message</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/clock.png" alt="">
+          <h2><a href="/">History</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/file-outline.png" alt="">
+          <h2><a href="/">Tasks</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/account-group.png" alt="">
+          <h2><a href="/">Communities</a></h2>
+        </div>
+      </div>
+      <div class="settings">
+        <div class="menu-item">
+          <img src="./content/sidebar/cog.png" alt="">
+          <h2><a href="/">Settings</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/chat-question.png" alt="">
+          <h2><a href="/">Support</a></h2>
+        </div>
+        <div class="menu-item">
+          <img src="./content/sidebar/shield-lock.png" alt="">
+          <h2><a href="/">Privacy</a></h2>
+        </div>
+      </div>
+    </div>
+    <div class="main">
+      <h2 id="projects-label">Your Projects</h2>
+      <div class="projects-container">
+        <div class="project">
+          <h2>Super Cool Project</h2>
+          <p class="side-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, exercitationem nostrum. Esse non accusantium
+            ullam mollitia recusandae quos est quis. </p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+        <div class="project">
+          <h2>Less Cool Project</h2>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae soluta repellendus
+            voluptatem! Ipsa
+            placeat nisi laudantium, provident rem odio repellendus totam vel! Consequatur magni maiores possimus
+            delectus explicabo tenetur ut?</p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+        <div class="project">
+          <h2>Impossible App</h2>
+          <p class="side-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. In, exercitationem nostrum.
+            Esse non accusantium.
+          </p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+        <div class="project">
+          <h2>Easy Peasy App</h2>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut corrupti eveniet, deleniti
+            dolorem molestias
+            sapiente odio ducimus cupiditate iste mollitia ratione earum veniam amet aspernatur!</p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+        <div class="project">
+          <h2>Ad Blocker</h2>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente porro, rem ducimus non
+            magnam architecto,
+            ut perferendis nihil repellendus necessitatibus velit ex id ipsa aliquid.</p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+        <div class="project">
+          <h2>Money Maker</h2>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, assumenda voluptatum
+            delectus eveniet
+            minus, doloremque repellendus debitis fuga magnam nemo dolorum. Eaque laudantium quos temporibus inventore
+            nostrum incidunt. </p>
+          <div class="project-links">
+            <a href="/"><img src="./content/projects/star-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/eye-plus-outline.png" alt=""></a>
+            <a href="/"><img src="./content/projects/link-variant.png" alt=""></a>
+          </div>
+        </div>
+      </div>
+      <h2 id="announcements-label">Announcements</h2>
+      <div class="announcements-container">
+        <div class="announcement">
+          <h3>Site Maintenance</h3>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum
+            exercitationem quisquam enim
+            eius illum praesentium saepe blanditiis ratione voluptatem?</p>
+        </div>
+        <hr>
+        <div class="announcement">
+          <h3>Community Share Day</h3>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum
+            exercitationem quisquam enim
+            eius illum
+            praesentium saepe blanditiis ratione voluptatem?</p>
+        </div>
+        <hr>
+        <div class="announcement">
+          <h3>Updated Privacy Policy</h3>
+          <p class="side-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore, voluptatum
+            exercitationem quisquam enim
+            eius illum
+            praesentium saepe blanditiis ratione voluptatem?</p>
+        </div>
+      </div>
+      <h2 id="trending-label">Trending</h2>
+      <div class="trending"></div>
+    </div>
+  </div>
+
 </body>
+
 </html>
