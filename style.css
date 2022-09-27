@@ -350,12 +350,51 @@ div.main h2 {
   background-color: var(--lighter);
   box-shadow: var(--shadow-mainstream);
   border-radius: 1rem;
+  padding: 2rem 2rem;
 
   grid-row: 4;
   grid-column: 2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  justify-content: flex-start;
 }
 
-p.side-text{
+.trending-user {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(2, 1fr);
+  align-items: center;
+  align-content: center;
+
+  column-gap: 1.5rem;
+}
+p.side-text {
   color: #475569;
+  font-weight: 400;
+}
+
+.profile-pic {
+  grid-row: 1 / span 2;
+  border: 2px solid #036aa126;
+    box-shadow: var(--shadow-mainstream);
+  border-radius: 50%;
+
+  height: 6rem;
+  width: 6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project-name {
+  align-self: start;
+}
+.profile-name {
+  align-self: end;
+}
+
+.profile-pic > img {
+  width: 80%;
 }
 /*********************************************************************************************/
