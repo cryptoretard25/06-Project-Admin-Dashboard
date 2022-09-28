@@ -75,7 +75,7 @@ div.grid-container {
   min-height: 100vh;
 
   display: grid;
-  grid-template-columns: 1fr 6fr;
+  grid-template-columns: 1fr minmax(870px, 6fr);
   grid-template-rows: auto 1fr;
 }
 
@@ -258,7 +258,7 @@ div.main {
   grid-column: 2;
 
   display: grid;
-  grid-template-columns: 4fr 1fr;
+  grid-template-columns: 4fr minmax(27rem, 1fr);
   grid-template-rows: repeat(2, auto 1fr);
   column-gap: 3rem;
   row-gap: 1rem;
