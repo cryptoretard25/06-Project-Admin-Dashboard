@@ -258,7 +258,7 @@ div.main {
   grid-column: 2;
 
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 4fr 1fr;
   grid-template-rows: repeat(2, auto 1fr);
   column-gap: 3rem;
   row-gap: 1rem;
@@ -336,9 +336,11 @@ div.main h2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
+
 }
 
 .announcement {
+  flex-grow: 1;
   overflow: hidden;
 }
 /*********************************************************************************************/
